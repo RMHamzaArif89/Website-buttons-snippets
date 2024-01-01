@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('/bg-1.jpg');
+            background-size: 100% 100%;
+            width: 100%;
+            height: 100vh;
+
+
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.808);
+            background-color: rgba(0, 0, 0, 0.486);
+            z-index: 100;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+
+
+
+
+
+
+        }
+
+
+        .form {
+            animation: transform 0.8s;
+            width: 560px;
+            height: 640px;
+            background: blueviolet;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        @keyframes transform {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+
+        }
+
+        img {
+            width: 180px;
+            height: 180px;
+            
+
+
+
+        }
+
+
+
+        label {
+            font-size: 1.1rem;
+            font-family: serif;
+            color: white;
+            margin: 2% 0%;
+        }
+
+        .input {
+            width: 90%;
+            height: 35px;
+            margin: 5% auto;
+
+        }
+
+        .input input {
+            width: 100%;
+            height: 100%;
+            padding: 4px;
+            font-size: 1.2rem;
+            font-family: serif;
+            border: none;
+            outline: none;
+            background: lightgrey;
+        }
+
+
+
+        .submit {
+            font-size: 1.4rem;
+            text-align: center;
+            font-family: serif;
+            background: lightgreen;
+            color: black;
+            width: 90%;
+            height: 40px;
+            padding: 8px 0;
+            text-decoration: none;
+            outline: none;
+            border: none;
+        }
+
+        .submit:hover {
+            background: lightcoral;
+            color: red;
+            cursor: pointer;
+        }
+
+
+
+        .checkbox {
+            width: 90%;
+            margin: auto;
+
+        }
+
+
+
+
+
+        .cancel {
+            width: 100%;
+            height: 60px;
+            background: lightgrey;
+            border-top: 1px solid rgb(10, 10, 10);
+            padding: 18px;
+
+        }
+
+        .can-btn {
+            width: 80px;
+            height: 35px;
+            background: red;
+            color: white;
+            padding: 8px 0;
+            text-align: center;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .login {
+            font-size: 1.2rem;
+            width: 120px;
+            height: 40px;
+            padding: 10px 0;
+            text-align: center;
+            background: blue;
+            position: absolute;
+            top: 3%;
+            left: 3%;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="/" method="post" class="form">
+            <img src="/img-2.jpg" alt="img here">
+
+
+            <div class="name input">
+                <label for="">Email</label>
+                <input type="Email" name="email" id="">
+            </div>
+
+
+            <div class="password input">
+                <label for="">Password</label>
+                <input type="password" name="" id="">
+            </div>
+
+
+            <button class="submit input">Submit</button>
+
+
+            <div class="checkbox">
+                <input type="checkbox" name="remember me" id="">
+                <label for="">Remember me</label>
+            </div>
+
+            <div class="cancel">
+                <div class="can-btn">Cancel</div>
+            </div>
+
+
+        </form>
+
+
+    </div>
+
+
+
+    <div class="login">
+        Login
+    </div>
+
+
+
+    <script>
+        login = document.querySelector('.login')
+
+        cancelBtn = document.querySelector('.can-btn')
+        cancelBtn.addEventListener('click', function () {
+            con.style.display = 'none'
+            login.style.display = 'block'
+        })
+
+        con = document.querySelector('.container')
+        login.addEventListener('click', function () {
+            con.style.display = 'flex'
+            login.style.display = 'none'
+
+        })
+    </script>
+</body>
+
+</html>

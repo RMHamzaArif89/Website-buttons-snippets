@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear inpFeild</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .con {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(180deg, black, pink);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            width: 30%;
+            height: 40%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid blue;
+        }
+
+        .inp {
+            width: 90%;
+            height: 40px;
+            padding: 4px;
+            background: white;
+            outline: none;
+            border: none;
+            font-size: 1.3rem;
+            color: black;
+            font-family: serif;
+        }
+
+
+        .btn {
+            font-size: 1.3rem;
+            color: white;
+            font-family: serif;
+            margin-top: 2%;
+            width: 120px;
+            height: 35px;
+            background: red;
+            text-align: center;
+            padding: 8px 0;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="box">
+
+            <input type="text" name="" class="inp" placeholder="Check CapsLock">
+
+
+
+            <div class="btn">Click</div>
+        </div>
+    </div>
+
+
+    <script>
+        btn = document.querySelector('.btn')
+        inp = document.querySelector('.inp')
+
+btn.addEventListener('click',function(){
+    alert('keyPress')
+})
+     
+
+
+     inp.addEventListener('keypress',function(event){
+        if(event.key==='enter'){
+            event.preventDefault();
+            alert('keypress')
+            btn.click();
+        }
+        
+    
+     })
+    </script>

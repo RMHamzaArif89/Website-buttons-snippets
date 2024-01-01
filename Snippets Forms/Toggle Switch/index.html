@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear inpFeild</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .con {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(180deg, black, pink);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            width: 30%;
+            height: 40%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid blue;
+        }
+
+        .inp {
+            width: 90%;
+            background: white;
+            outline: none;
+            border: none;
+            height: 35px;
+            padding: 4px;
+            font-size: 1.3rem;
+            color: rgb(105, 105, 105);
+            font-family: serif;
+        }
+
+        .btn {
+            width: 60px;
+            height: 36px;
+            padding: 3px 0;
+            text-align: center;
+            font-size: 1.3rem;
+            font-family: serif;
+            color: white;
+            background: blue;
+            border-radius: 8px;
+            margin-top: 4%;
+            cursor: pointer;
+        }
+
+        .btn-box {
+            width: 30px;
+            height: 30px;
+            background: gray;
+            border-radius: 50%;
+            float: left;
+
+
+
+        }
+
+        .addClass {
+            float: right;
+            background: white;
+        }
+
+
+
+        .text{
+            font-size: 1.5rem;
+            color: white;
+            font-family: monospace;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="box">
+
+            <div class="btn">
+                <div class="btn-box">
+
+                </div>
+            </div>
+
+            <div class="text"></div>
+        </div>
+    </div>
+
+
+    <script>
+
+        btnBox = document.querySelector('.btn-box')
+
+        text=document.querySelector('.text')
+
+
+        btnBox.addEventListener('click', function () {
+            btnBox.classList.toggle('addClass')
+            if(btnBox.classList.contains('addClass')){
+                text.innerHTML='on'
+            }
+            else{
+                text.innerHTML='off'
+            }
+    
+            
+        })
+
+      
+
+
+    
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: lightblue;
+        }
+
+
+        
+        .con {
+            width: 100%;
+            height: 80vh;
+            background: lightblue;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid gray;
+            
+        }
+
+        .con-text {
+            width: 100%;
+            padding: 1% 2.8%;
+            border: 1px solid gray;
+            height: 25%;
+
+        }
+
+        .con-text1 {
+            font-size: 2.5rem;
+            font-weight: bolder;
+            font-family: sans-serif;
+        }
+
+        .con-text2 {
+            font-size: 1rem;
+            margin-top: 12px;
+        }
+
+
+
+
+
+
+
+        .row {
+            width: 95%;
+            height: 90px;
+            margin-top: 8px;
+        }
+
+
+
+        .inp {
+
+            width: 100%;
+            height: 50px;
+            font-size: 1.3rem;
+            color: gray;
+            font-family: serif;
+            padding: 5px;
+            background: white;
+            outline: none;
+            border: none;
+
+        }
+
+        label {
+
+            font-size: 1.3rem;
+            color: black;
+            font-weight: bolder;
+            font-family: serif;
+        }
+
+
+
+
+
+
+
+        .t-text {
+            width: 95%;
+            font-size: 1.1rem;
+            color: black;
+            font-family: serif;
+            padding: 12px 0;
+            text-align: left;
+        }
+
+
+
+
+
+
+
+        .btn {
+            width: 95%;
+            height: 60px;
+            padding: 15px 0;
+            text-align: center;
+            color: white;
+            font-size: 1.4rem;
+            font-family: serif;
+            background: rgb(38, 194, 38);
+        }
+
+        .btn:hover {
+            background: rgb(71, 248, 71);
+            cursor: pointer;
+        }
+
+
+
+        .sign-in {
+            margin-top: 3%;
+            width: 100%;
+            height: 60px;
+            padding: 15px 0;
+            text-align: center;
+            color: black;
+            font-size: 1.2rem;
+            font-family: serif;
+            background: rgb(161, 161, 161);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/register" method="post">
+        <div class="con">
+            <div class="con-text">
+                <div class="con-text1">Register</div>
+                <div class="con-text2">Please fill the form to create an account.</div>
+            </div>
+            <div class="name row">
+                <label for="">Name</label>
+                <input type="text" name="name" id="" placeholder="Name" class="inp">
+
+            </div>
+
+            <div class="email row">
+                <label for="">Email</label>
+                <input type="Email" name="email" id="" placeholder="Email" class="inp">
+
+            </div>
+            <div class="pass row">
+                <label for="">Password</label>
+                <input type="password" name="password" id="" placeholder="Password" class="inp">
+            </div>
+
+            <div class="r-pass row">
+
+                <label for=""> Repeat Password</label>
+                <input type="password" name="" id="" placeholder="Repeat Password" class="inp">
+            </div>
+
+
+
+            <div class="t-text">
+                By Creating an account you agree to our <a href="#">Terms & Privacy</a>.
+            </div>
+
+
+
+            <div class="btn" type="submit">Login</div>
+
+
+
+
+            <div class="sign-in">
+                Already an account <a href="">sign-in</a>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>

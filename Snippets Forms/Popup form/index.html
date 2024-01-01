@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUP Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 60%;
+            height: 40%;
+            background: rgb(194, 190, 190);
+
+            border: 1px solid black;
+            padding: 1%;
+            position: relative;
+        }
+
+        .con-text {
+            font-size: 1.8rem;
+            font-family: serif;
+            font-weight: bolder;
+            color: black;
+
+        }
+
+        .con-text2 {
+            font-size: 1.3rem;
+            font-family: serif;
+            margin-top: 1%;
+            color: gray;
+
+        }
+
+
+        .btn{
+            width: 30%;
+            height: 45px;
+            padding: 10px 0;
+            text-align: center;
+            background: rgb(102, 99, 99);
+            color: white;
+            font-size: 1rem;
+            font-family: serif;
+            position: absolute;
+            right: 2%;
+            bottom: 2%;
+            cursor: pointer;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .form{
+            width: 30%;
+            height: 80%;
+            background: lightblue;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            right: 2%;
+            bottom: 2%;
+            display: none;
+        }
+        .form .inp{
+            width: 90%;
+            height: 35px;
+            padding: 4px;
+            font-size: 1.2rem;
+            color: gray;
+            font-family: serif;
+            border: none;
+            outline: none;
+            margin-top: 5%;
+
+        }
+        .form .login{
+            width: 90%;
+            height: 35px;
+            text-align: center;
+            padding: 6px 0;
+            background: lightgreen;
+            color: white;
+            font-size: 1.1rem;
+            font-family: sans-serif;
+            margin-top: 5%;
+            cursor: pointer;
+        }
+        .form .close{
+            width: 90%;
+            height: 35px;
+            text-align: center;
+            padding: 6px 0;
+            background: red;
+            color: white;
+            font-size: 1.1rem;
+            font-family: sans-serif;
+            margin-top: 5%;
+            cursor: pointer;
+        }
+        .label{
+            font-size: 1.4rem;
+            font-family: sans-serif;
+            font-weight: bolder;
+            color: black;
+        }
+   
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="con-text">Popup Form</div>
+        <div class="con-text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora asperiores itaque
+            consectetur suscipit ut ea doloribus, quibusdam fugiat debitis beatae!</div>
+
+
+            <div class="btn">
+            Open Form
+            </div>
+
+            <div class="form">
+              <div class="con-text">Login</div>
+                <input type="Email" class="inp" placeholder="Email">
+               
+                <input type="Password" class="inp" placeholder="password">
+           <div class=" login">Login</div>
+           <div class=" close">close</div>
+            </div>
+    </div>
+
+
+
+
+
+    <script>
+    form=document.querySelector('.form')
+    openForm=document.querySelector('.btn')
+
+    close=document.querySelector('.close')
+
+    openForm.addEventListener('click',function(){
+        form.style.display='flex'
+
+    })
+
+
+
+    close.addEventListener('click',function(){
+        form.style.display='none'
+
+    })
+
+
+
+    </script>
+ 
+</body>
+
+</html>
