@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Btn on image</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div.con{
+            width: 20%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('/bg-1.jpg');
+            background-position: center;
+            background-size: contain;
+            z-index: -1;
+        }
+        .btn{
+            width: 80px;
+            height: 35px;
+            padding: 6px 0;
+            text-align: center;
+            font-size: 1.3rem;
+            font-family: serif;
+            color: red;
+            background: pink;
+        }
+        .btn:hover{
+            background: lightcoral;
+            color: white;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="btn">
+click
+        </div>
+    </div>
+</body>
+</html>
