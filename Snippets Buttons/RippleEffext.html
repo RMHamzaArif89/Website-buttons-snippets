@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Btns</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            margin: 15%;
+            width: 160px;
+            height: 70px;
+            padding: 12px 0;
+            color: white;
+            text-align: center;
+            font-size: 1.4rem;
+            font-family: sans-serif;
+            border: none;
+            outline: none;
+            background: rgba(3, 192, 161, 0.795);
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+   
+        .btn:after {
+            content: " ";
+            background: green;
+            display: block;
+            position: absolute;
+            padding-top: 300%;
+            padding-left: 350%;
+            margin-left: -20px!important;
+            margin-top: -120%;
+            opacity: 0;
+            transition: all 0.8s
+          }
+          
+          .btn:active:after {
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            transition: 0s
+          }
+
+
+      
+
+    </style>
+</head>
+
+<body>
+    <button class="btn btn-1">
+        Hover
+        
+    </button>
+  
+</body>
+
+</html>

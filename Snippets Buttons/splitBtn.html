@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Btn </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+      
+        .btn-text{
+            height: 50px;
+            width: 120px;
+            text-align: center;
+            font-size: 1.2rem;
+            background: blue;
+            color: white;
+            font-family: sans-serif;
+            outline: none;
+            border: none;
+            border-right: 1px solid rgb(207, 205, 205);
+            float: left;
+            
+        }
+
+        .dropdown{
+            
+            padding: 8px 0;
+            width: 60px;
+            height: 50px;
+            color: white;
+            font-size: 1rem;
+            outline: none;
+            border: none;
+            background: blue;
+        }
+        .dropdown:hover{
+            background: rgba(0, 0, 255, 0.616);
+            cursor: pointer;
+        }
+
+
+
+
+
+        .drop-text{
+            width: 180px;
+            height: 200px;
+            background: rgb(7, 158, 146);
+            position: absolute;
+            display: none;
+            border: 1px solid gray;
+
+        }
+        .drop-text li{
+        list-style: none;
+        color: black;
+        border-bottom: 1px solid rgba(182, 179, 179, 0.842);
+        text-align: center;
+        height: 30px;
+        padding: 8px 0;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        }
+        .drop-show{
+            display: block;
+        }
+        .drop-text li:hover{
+            background:rgba(5, 184, 169, 0.699);
+            cursor: pointer;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <button class="btn-text">
+        Button
+    </button>
+    
+
+        <button class="dropdown">
+            <i class="bi bi-caret-down"></i>
+        </button>
+        <div class="drop-text">
+            <li>home</li>
+            <li>about</li>
+            <li>menu</li>
+        </div>
+
+        <script>
+            dropdown=document.querySelector('.dropdown')
+            dText=document.querySelector('.drop-text')
+            dropdown.addEventListener('click',function(){
+             dText.classList.toggle('drop-show')
+            })
+        </script>
+  
+</body>
+</html>
