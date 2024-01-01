@@ -1,1 +1,1 @@
-# Website-buttons-snippets
+# Website Snippets
