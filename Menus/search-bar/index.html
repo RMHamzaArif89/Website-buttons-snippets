@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search-bar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .nav-bar{
+            width: 100%;
+            height: 50px;
+            background: darkgray;
+
+        }.nav-bar li{
+            width: 8%;
+            height: 100%;
+            padding: 10px 0;
+            list-style-type: none;
+            cursor: pointer;
+            float: left;
+            color:darkblue;
+            font-size: 1.4rem;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        .nav-bar li:hover{
+            background: rgba(128, 128, 128, 0.829);
+        }
+        .active{
+            background: rgba(0, 0, 255, 0.89);
+            color: white;
+        }
+
+
+
+        .s-bar{
+            width: 220px;
+            height: 60%;
+            margin: 10px 10px 0 0;
+            float: right;
+            background: white;
+            border-radius: 5px;
+        }
+        .s-bar input{
+            width: 85%;
+            height: 100%;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: sans-serif;
+            float: left;
+            padding: 4px 0;
+        }
+        .s-bar i{
+            width: 15%;
+            height: 100%;
+            font-size: 1.1rem;
+            background: rgba(117, 117, 117, 0.877);
+            float: right;
+            border-radius: 4px 4px 4px 0;
+            padding: 6px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+<li class="active">Home</li>
+<li>About</li>
+<li>FAQ</li>
+<li>Contact</li>
+<div class="s-bar">
+    <input type="text" name="" id="" placeholder="search...">
+    <i class="bi bi-search"></i>
+</div>
+
+    </div>
+</body>
+</html>

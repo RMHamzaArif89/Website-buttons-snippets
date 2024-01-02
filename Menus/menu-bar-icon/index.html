@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu bar icon</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 756px;
+        }
+
+        .container {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .line1,
+        .line2,
+        .line3 {
+            width: 35px;
+            height: 5px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .change .line1 {
+            transform: translate(0, 11px) rotate(-45deg);
+        }
+
+        .change .line2 {
+            opacity: 0;
+        }
+
+        .change .line3 {
+            transform: translate(0, -11px) rotate(45deg);}
+    </style>
+</head>
+
+<body>
+
+
+    <p>Click on the Menu Icon to transform it to "X":</p>
+<div class="container">
+  <div class="line1"></div>
+  <div class="line2"></div>
+  <div class="line3"></div>
+</div>
+
+<script>
+    con=document.querySelector('.container')
+    con.addEventListener("click",function(){
+        con.classList.toggle('change');
+    })
+
+
+</script>
+
+</body>
+
+</html>

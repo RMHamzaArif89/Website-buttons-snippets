@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed side-bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav-bar{
+            width: 100%;
+            height: 50px;
+            text-align: right;
+            float: right;
+            padding: 8px;
+            font-size: 1.4rem;
+            font-family: serif;
+            background: #000;
+            color: white;
+            cursor: pointer;
+            transition: width 0.8s;
+        }
+        .nav-add{
+            width: 86%;
+        }
+
+        .side-bar {
+            width: 14%;
+            position: fixed;
+            height: 756px;
+            background: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: collapse;
+            animation-duration: 0.8s;
+            animation-fill-mode:forwards;
+            display: none;
+        }
+        @keyframes collapse{
+            0%{
+                left: -14%;
+            }
+            100%{
+                left: 0;
+            }
+            
+        }
+        .side-show{
+            display: block;
+        }
+
+
+
+
+
+        .side-bar li {
+            list-style-type: none;
+            width: 100%;
+            height: 50px;
+            font-size: 1.4rem;
+            color: aliceblue;
+            padding: 8px;
+            text-align: center;
+
+        }
+
+        li:hover {
+            background: #2e2d2d8c;
+            cursor: pointer;
+        }
+
+
+
+
+        .con {
+            float: right;
+            width: 100%;
+            height: auto;
+            background: linear-gradient(145deg,silver, blueviolet);
+            transition: width 0.8s;
+        }
+        .con-add{
+            width: 86%;
+        }
+
+
+
+
+        h1 {
+            color: orange;
+            font-size: 2.4rem;
+            font-family: sans-serif;
+            padding: 8px;
+        }
+
+        h2 {
+            color: rgb(55, 0, 255);
+            font-size: 2.4rem;
+            font-family: sans-serif;
+            padding: 8px;
+        }
+
+        p {
+            color:black;
+            font-size: 1.3rem;
+            padding: 8px;
+            font-family: serif;
+        }
+
+
+
+        @media(max-width:860px){
+            .container{
+                display: block;
+            }
+            .side-bar{
+                width: 100%;
+                height: 50px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .side-bar li{
+                display: inline-block;
+                width: 18%;
+
+            }
+            div.con{
+                width: 100%;
+                float: left;
+                
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar btn">
+            click
+        </div>
+        <div class="side-bar">
+            <li>Home</li>
+            <li>About</li>
+            <li>FAQ</li>
+            <li>Contact</li>
+        </div>
+
+        <div class="con">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, sit optio id natus doloribus unde
+                consequuntur recusandae quae corporis eveniet odit accusantium asperiores molestias sint, voluptate, eum
+                consectetur maxime aliquid quas harum atque blanditiis tempore. Vero sit rem quas! Dolore.</p>
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum non, aliquam praesentium dolorem
+                doloremque distinctio, error alias, assumenda delectus harum beatae repellendus quae. Veniam ipsum
+                aliquam fuga iusto laudantium minus hic atque! Quaerat soluta veniam saepe eligendi eum reprehenderit
+                aspernatur?</p>
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere sint maiores natus asperiores,
+                necessitatibus similique explicabo ex, voluptatum ab consequuntur a ducimus accusamus, accusantium
+                exercitationem maxime dolores laborum placeat deserunt?</p>
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi id similique magni dignissimos. Cum
+                magni fugit error mollitia voluptatem necessitatibus vel eum hic nulla, reprehenderit dolorem quae quasi
+                laudantium sed dolorum aperiam, debitis libero! Molestias voluptatem iusto consequuntur qui perspiciatis
+                explicabo, possimus distinctio saepe, maxime, odio sit! Nemo natus veniam atque placeat qui aut
+                similique accusamus consequatur cumque iure expedita dolore alias obcaecati minima voluptates asperiores
+                tempora, nesciunt sapiente maiores esse dolor accusantium, eum molestiae! Modi nobis quidem ea nam
+                delectus laboriosam voluptatibus atque. Cumque magnam repudiandae dolor nesciunt, asperiores rerum,
+                officiis voluptate eum debitis ullam delectus eaque vero porro! Quam, deserunt alias voluptatibus sit
+                tempore, est corporis, exercitationem facilis architecto aspernatur dolorum molestiae odio officia nam?
+                Saepe necessitatibus libero cum quae officia, vero architecto modi ratione veniam? Eaque saepe tempora,
+                libero voluptate ipsam voluptates unde minus ut nemo perferendis dolorum exercitationem maxime, suscipit
+                ex alias sed iure aut, assumenda odit molestiae! Consectetur sequi, iusto qui beatae voluptatibus odit
+                et modi sed expedita porro ea, consequuntur dignissimos ab! Perspiciatis, tempora totam. Quae,
+                laudantium commodi. Veritatis eligendi doloribus magni modi sed!</p>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, sit optio id natus doloribus unde
+                consequuntur recusandae quae corporis eveniet odit accusantium asperiores molestias sint, voluptate, eum
+                consectetur maxime aliquid quas harum atque blanditiis tempore. Vero sit rem quas! Dolore.</p>
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum non, aliquam praesentium dolorem
+                doloremque distinctio, error alias, assumenda delectus harum beatae repellendus quae. Veniam ipsum
+                aliquam fuga iusto laudantium minus hic atque! Quaerat soluta veniam saepe eligendi eum reprehenderit
+                aspernatur?</p>
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere sint maiores natus asperiores,
+                necessitatibus similique explicabo ex, voluptatum ab consequuntur a ducimus accusamus, accusantium
+                exercitationem maxime dolores laborum placeat deserunt?</p>
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi id similique magni dignissimos. Cum
+                magni fugit error mollitia voluptatem necessitatibus vel eum hic nulla, reprehenderit dolorem quae quasi
+                laudantium sed dolorum aperiam, debitis libero! Molestias voluptatem iusto consequuntur qui perspiciatis
+                explicabo, possimus distinctio saepe, maxime, odio sit! Nemo natus veniam atque placeat qui aut
+                similique accusamus consequatur cumque iure expedita dolore alias obcaecati minima voluptates asperiores
+                tempora, nesciunt sapiente maiores esse dolor accusantium, eum molestiae! Modi nobis quidem ea nam
+                delectus laboriosam voluptatibus atque. Cumque magnam repudiandae dolor nesciunt, asperiores rerum,
+                officiis voluptate eum debitis ullam delectus eaque vero porro! Quam, deserunt alias voluptatibus sit
+                tempore, est corporis, exercitationem facilis architecto aspernatur dolorum molestiae odio officia nam?
+                Saepe necessitatibus libero cum quae officia, vero architecto modi ratione veniam? Eaque saepe tempora,
+                libero voluptate ipsam voluptates unde minus ut nemo perferendis dolorum exercitationem maxime, suscipit
+                ex alias sed iure aut, assumenda odit molestiae! Consectetur sequi, iusto qui beatae voluptatibus odit
+                et modi sed expedita porro ea, consequuntur dignissimos ab! Perspiciatis, tempora totam. Quae,
+                laudantium commodi. Veritatis eligendi doloribus magni modi sed!</p>
+
+
+        </div>
+    </div>
+
+
+    <script>
+        btn=document.querySelector('.btn')
+        sidebar=document.querySelector('.side-bar')
+        con=document.querySelector('.con')
+        
+        btn.addEventListener('click',function(){
+            sidebar.classList.toggle('side-show')
+            con.classList.toggle('con-add')
+            btn.classList.toggle('nav-add')
+        })
+    </script>
+
+</body>
+
+</html>

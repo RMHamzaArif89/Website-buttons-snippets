@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottom navbar </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav-bar{
+            width: 100%;
+            height: 60px;
+            background: black;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        .nav-bar li{
+            list-style: none;
+            display: inline-block;
+            width: 10%;
+            text-align: center;
+            height: 100%;
+            padding: 12px 0;
+            font-size: 1.4rem;
+            color: white;
+            float: left;
+        }
+        li:hover{
+            background: #4b4a4ae0;
+            
+            cursor: pointer;
+        }
+
+
+        li.active{
+            background: rgba(129, 128, 128, 0.781);
+            color:black;
+        }
+        li.icon{
+            display: none;
+        }
+
+
+        .con h1{
+            padding: 12px;
+            font-size: 2rem;
+            color: blueviolet;
+            font-family: sans-serif;
+        }
+        .con p{
+            padding: 12px;
+            font-size: 1.3rem;
+            color: black;
+            font-family: sans-serif;
+        }
+
+
+
+
+
+
+
+
+
+
+        @media(max-width:860px){
+           .nav-bar li{
+                display: none;
+            }
+            .nav-bar .active{
+                display: inline-block;
+            }
+            li.icon{
+                display: block;
+                font-size: 1.4rem;
+                color: white;
+                float: right;
+                text-align: right;
+                height: 60px;
+                padding: 10px 8px;
+                
+                width: 5%;
+                
+                
+            }
+            
+            .nav-add{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+                height: 300px;
+            }
+            .nav-add li{
+                display: block;
+                width: 100%;
+                height: 60px;
+                padding: 10px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <li class="active">Home</li>
+        <li>About</li>
+        <li>FAQ</li>
+        <li>More</li>
+        <li class="icon">&#9776;</li>
+    </div>
+    <div class="con">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, odit commodi ea illum minima totam alias cum eaque ipsa aliquam quos facere ducimus autem debitis iste aliquid aspernatur in voluptas.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        icon=document.querySelector('.icon')
+        nav=document.querySelector('.nav-bar')
+        icon.addEventListener('click',function(){
+        
+        nav.classList.toggle('nav-add')
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar btns</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(145deg,silver,green,orange);
+            width: 100%;
+            height: 756px;
+        }
+        .nav-bar{
+            width: 20%;
+            position: fixed;
+            height: 756px;
+
+        }
+        .nav-bar li{
+            width: 160px;
+            height: 50px;
+            padding: 10px 12px;
+            text-align: left;
+            list-style: none;
+            border-radius: 5px;
+            font-size: 1.4rem;
+            font-family: sans-serif;
+            margin-bottom: 8%;
+            position: relative;
+            left: -100px;
+            cursor: pointer;
+            transition: left 0.4s;
+            color: white;
+
+        }
+        li:hover{
+            left: -5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="nav-bar">
+        <li style="background-color: orangered;">Home</li>
+        <li style="background-color: blue;">About</li>
+        <li style="background-color: red;">More</li>
+        <li style="background-color: blueviolet;">Contact</li>
+    </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega-Menu</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .nav-bar {
+            width: 100%;
+            height: 50px;
+            background: #000;
+        }
+
+        .nav-bar li {
+            display: inline-block;
+            list-style-type: none;
+            color: white;
+            width: 12%;
+            height: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.3rem;
+            text-transform: capitalize;
+            font-family: serif;
+            cursor: pointer;
+
+        }
+        .btn{
+            outline: none;
+            border:none;
+            text-decoration: none;
+            width: 12%;
+            height: 100%;
+            font-size: 1.3rem;
+            text-transform: capitalize;
+            background: #000;
+            color: white;
+            cursor: pointer;
+        }
+
+    
+
+
+
+
+        .m-menu {
+            width: 100%;
+            height: 700px;
+            background: linear-gradient(160deg, pink, orange);
+            padding: 4%;
+            display: none;
+           
+            
+
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: blueviolet;
+            font-family: serif;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: grey;
+            font-family: serif;
+        }
+
+        .mm{
+            display: block;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <li>home</li>
+        <li>contact</li>
+        <li>more</li>
+       <button class="btn">mega menu</button>
+    </div>
+
+    <div class="m-menu ">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est, consequatur fuga, mollitia, totam deserunt
+            in accusamus repellat eaque vitae quas nemo similique quis aliquid commodi rem a ab. Corrupti, aspernatur.
+            Non rerum perferendis magni dicta. Aut cupiditate magni incidunt cum reiciendis blanditiis quos inventore,
+            ad distinctio! Quasi odio dicta impedit pariatur quis autem culpa aliquam quod. Voluptas expedita nisi fuga.
+            Officiis excepturi sed eius error! Atque laboriosam nulla magnam! Veritatis libero fuga eligendi aspernatur
+            voluptates culpa obcaecati fugit facilis eveniet magnam esse quo laudantium, est nam adipisci. Perferendis
+            quisquam cum, doloribus et expedita optio ea asperiores perspiciatis, in dolore, magni aliquid officiis
+            doloremque velit? Repellendus nemo cumque alias temporibus optio vero voluptatibus commodi nisi blanditiis,
+            dolor fugiat sint explicabo voluptates voluptas id harum cum, doloremque aperiam! Dignissimos, deleniti
+            blanditiis. Cumque voluptatum itaque voluptas officiis non voluptate tempora eaque saepe magni, amet fuga
+            obcaecati qui recusandae sunt natus libero asperiores, dolores facilis. Assumenda ut doloremque quibusdam at
+            recusandae eveniet facilis alias ad beatae, facere quas dolore ipsam cumque nemo repellendus natus provident
+            culpa consequuntur, quae tenetur blanditiis. Doloribus maxime, quidem asperiores fugiat quos sit nostrum
+            nobis tempore inventore fuga vitae magni nisi iusto perspiciatis quasi, at aut autem dolores maiores qui
+            vero quibusdam ducimus. Voluptas similique animi maxime exercitationem dolores debitis laboriosam quisquam
+            expedita, repellat, deleniti nihil repudiandae, officiis aspernatur esse. Aperiam odit in error dolores a
+            incidunt. Recusandae accusamus fugit numquam dolor laboriosam cum possimus, architecto vero dolore quod. Id
+            laboriosam vero ipsam quidem nihil! Harum aut in minus optio eius rem voluptas alias nemo minima veritatis
+            quas amet repellat vel ipsam, dolore quia. Aut porro esse expedita fugit aliquid culpa cupiditate temporibus
+            quo molestias dolorem dicta similique deserunt libero quidem, cum optio sapiente quod tempora totam
+            possimus? Consequatur, temporibus mollitia deleniti magnam perferendis suscipit necessitatibus adipisci
+            ipsum atque ullam, quidem facilis non ipsam, vero sed porro expedita excepturi enim tenetur corporis quaerat
+            hic eveniet blanditiis aspernatur! Vitae tenetur architecto magnam quam rerum quaerat maxime harum sequi
+            ipsam, sed est nisi aperiam reprehenderit illo tempora vel porro, dignissimos voluptatum velit? Blanditiis
+            in sed, quod minus est optio libero cumque, consectetur molestiae sint nam tempore qui. In, assumenda labore
+            adipisci, dolor deserunt ducimus aut, rerum iste iure veritatis similique aliquam eaque! A labore, mollitia
+            cumque dolor harum placeat? Dolore animi, ut atque, ullam fuga maxime recusandae ea explicabo sapiente quae
+            unde repellendus veritatis assumenda ipsam, modi a aliquam dicta nulla ducimus! Quae delectus et non,
+            perspiciatis beatae nemo possimus ipsa magnam veritatis quaerat ducimus repellendus, sit autem odio. Dicta
+            consequuntur voluptatum illo corporis, quidem sequi eos nobis ab corrupti laborum aliquid, laboriosam non,
+            enim repudiandae esse delectus adipisci dolores consequatur fuga dolorem incidunt maxime fugit soluta.
+            Adipisci laborum dicta nesciunt aut, ratione modi pariatur magni quasi excepturi ullam cumque accusantium
+            veniam minus fugit accusamus id itaque delectus sapiente. Quas ab dolorum iure sint autem tempora eligendi
+            porro, numquam suscipit impedit atque? Reprehenderit ullam aspernatur laborum harum eum, quo unde. In nemo
+            quas dolore corporis dicta quaerat fuga, atque voluptatum culpa.</p>
+    </div>
+</body>
+
+
+
+<script>
+    btn=document.querySelector('.btn')
+    btn.addEventListener('click',function(){
+        mm=document.querySelector('.m-menu')
+        mm.classList.toggle('mm')
+
+    })
+</script>
+
+</html>

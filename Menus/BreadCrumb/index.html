@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreadCrumb</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .nav-bar{
+            width: 100%;
+            height: 40px;
+            background: #bbc3d3c0;
+        }
+        .nav-bar li+li:before {
+            padding: 12px;
+            color: black;
+            content: "/\00a0";
+          }
+        .nav-bar li{
+            cursor: pointer;
+            list-style: none;
+            font-size: 1.4rem;
+            color: rgb(53, 135, 230);
+            width: 8%;
+            height: 100%;
+            padding: 6px 0;
+            display: inline-block;
+            text-align: center;
+        }
+        .nav-bar li:hover{
+            background: rgba(226, 225, 225, 0.658);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <li>Home</li>
+        <li>About</li>
+        <li>More</li>
+        <li>Contact</li>
+    </div>
+    
+</body>
+</html>

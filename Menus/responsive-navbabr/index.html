@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>top navbar
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav-bar {
+            width: 100%;
+            height: 60px;
+            background: black;
+            max-height: auto;
+        }
+
+        .con-nav {
+            width: 90%;
+            height: 100%;
+        }
+
+        .con-nav li {
+            list-style: none;
+            display: inline-block;
+            width: 10%;
+            text-align: center;
+            height: 100%;
+            padding: 12px 0;
+            font-size: 1.4rem;
+            color: white;
+            float: left;
+        }
+
+        li:hover {
+            background: #4b4a4ae0;
+
+            cursor: pointer;
+        }
+
+
+        li.active {
+            background: white;
+            color: black;
+        }
+
+
+
+
+
+
+        div.icon {
+            float: right;
+            display: none;
+            padding: 8px;
+
+        }
+
+
+
+
+        .line1,
+        .line2,
+        .line3 {
+            width: 35px;
+            height: 5px;
+            background-color: white;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .change .line1 {
+            transform: translate(0, 11px) rotate(-45deg);
+        }
+
+        .change .line2 {
+            opacity: 0;
+        }
+
+        .change .line3 {
+            transform: translate(0, -11px) rotate(45deg);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width:740px) {
+            div.icon {
+                display: block;
+
+            }
+
+            .con-nav {
+                display: none;
+            }
+
+            .nav-show {
+                float: left;
+                height: 300px;
+                width: 27%;
+                display: flex;
+                
+                align-items: center;
+                flex-direction: column;
+                background: #000;
+            }
+
+            .nav-show li {
+                width:180px;
+                height: 60px;
+                padding: 8px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="con-nav">
+            <li class="active">Home</li>
+            <li>About</li>
+            <li>FAQ</li>
+            <li>More</li>
+        </div>
+
+        <div class="icon">
+
+            <div class="i-bar">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <script>
+        icon = document.querySelector('.i-bar')
+        icon.addEventListener("click", function () {
+            icon.classList.toggle('change');
+        })
+
+
+
+
+
+        conNav = document.querySelector('.con-nav')
+        icon.addEventListener('click', function () {
+            conNav.classList.toggle('nav-show')
+        })
+
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curtain-menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav-tog {
+            width: 100%;
+            height: 50px;
+            background: #000;
+
+        }
+
+        .btn-tog {
+            color: white;
+            font-size: 1.8rem;
+            position: absolute;
+            top: 1%;
+            right: 2%;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .curtain {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(120deg, rgba(27, 27, 27, 0.74), rgba(27, 27, 27, 0.712));
+            animation: leftcur;
+            animation-duration: 0.8s;
+            animation-fill-mode: forwards;
+
+            display: none;
+        }
+
+        .curtain li {
+            font-size: 1.8rem;
+            color: white;
+            font-family: sans-serif;
+            list-style: none;
+            height: 60px;
+            width: 5%;
+            padding: 8px;
+            text-align: center;
+        }
+
+        @keyframes leftcur {
+            0% {
+                left: -100%;
+            }
+
+            100% {
+                left: 0%;
+            }
+        }
+
+
+        .btn-show {
+            display:flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-tog">
+        <div class="btn-tog">click</div>
+    </div>
+
+
+    <div class="curtain">
+        <li>Home</li>
+        <li>About</li>
+        <li>More</li>
+        <li>Info</li>
+    </div>
+    <script>
+        btn = document.querySelector('.btn-tog')
+        curtain = document.querySelector('.curtain')
+        btn.addEventListener('click', function () {
+            curtain.classList.toggle('btn-show')
+            if (curtain.classList.contains('btn-show')) {
+                btn.innerText = 'x'
+            } else {
+                btn.innerText = 'click'
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordian</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        div.continer {
+            width: 100%;
+            height: auto;
+        }
+
+        .container .list {
+            width: 100%;
+            height: 60px;
+            padding: 10px;
+            background: lightblue;
+            margin-bottom: 3px;
+            cursor: pointer;
+            
+
+        }
+
+        .list p {
+            float: left;
+            font-size: 1.8rem;
+            color: black;
+            margin-left: 2%;
+
+        }
+
+        .list span {
+            float: right;
+            font-size: 1.8rem;
+            color: black;
+            margin-right: 2%;
+            padding: 1px 2px;
+
+
+        }
+        .list span:hover{
+            border-radius: 50%;
+            background: rgba(247, 247, 248, 0.589);
+        }
+
+
+
+        .c-text{
+            height: 80px;
+            font-size: 1.1rem;
+            font-family: sans-serif;
+            color: rgb(24, 23, 23);
+            padding: 8px;
+            display: none;
+            
+        }
+        .c-add{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="list">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <span>+</span>
+            <!-- add class on click -->
+           
+        </div>
+        <div class="c-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium, veritatis corporis dolor vero
+            vitae repellat ipsum voluptate, nam officiis, voluptatum fugiat alias at ad? Quo debitis magnam eaque
+            tempora velit nisi consequuntur sequi iure laborum ullam nam officiis hic quidem laudantium aliquam
+            perspiciatis id, eius, quia, magni vel architecto suscipit maiores. Repellendus culpa nemo alias aperiam
+            expedita error eos!
+        </div>
+
+
+
+
+        <div class="list">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <span>+</span>
+       
+        </div>
+             <!-- add class on click -->
+             <div class="c-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium, veritatis corporis dolor vero
+                vitae repellat ipsum voluptate, nam officiis, voluptatum fugiat alias at ad? Quo debitis magnam eaque
+                tempora velit nisi consequuntur sequi iure laborum ullam nam officiis hic quidem laudantium aliquam
+                perspiciatis id, eius, quia, magni vel architecto suscipit maiores. Repellendus culpa nemo alias aperiam
+                expedita error eos!
+            </div>
+
+
+
+        <div class="list">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <span>+</span>
+        
+        </div>
+
+             <!-- add class on click -->
+             <div class="c-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium, veritatis corporis dolor vero
+                vitae repellat ipsum voluptate, nam officiis, voluptatum fugiat alias at ad? Quo debitis magnam eaque
+                tempora velit nisi consequuntur sequi iure laborum ullam nam officiis hic quidem laudantium aliquam
+                perspiciatis id, eius, quia, magni vel architecto suscipit maiores. Repellendus culpa nemo alias aperiam
+                expedita error eos!
+            </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        list=document.querySelectorAll('.list')
+        ctext=document.querySelectorAll('.c-text')
+
+
+for(i=0;i<list.length;i++){
+ list[i].addEventListener('click',function(){
+    this.nextElementSibling.classList.toggle('c-add')
+ })
+}
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

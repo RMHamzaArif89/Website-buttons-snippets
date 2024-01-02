@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagination</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .pagination{
+            width: 50%;
+            height: 40px;
+            
+        }
+        .pagination li{
+            display: inline-block;
+            list-style: none;
+            width: 6%;
+            height: 100%;
+            padding: 8px;
+            text-align: center;
+            font-size: 1.4rem;
+            font-family: sans-serif;
+            color: black;
+        
+            
+        }
+        .pagination .active{
+            background: blue;
+        }
+       
+        .pagination li:hover{
+            background: rgba(192, 192, 192, 0.493);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pagination">
+            <li>&laquo;</li>
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>&raquo;</li>
+        </div>
+    </div>
+    
+</body>
+</html>

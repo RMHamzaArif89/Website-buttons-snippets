@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pill Navigation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav-bar{
+            width: 100%;
+            height: 55px;
+            
+        }
+        .nav-bar li{
+            width: 8%;
+            height: 100%;
+            padding: 15px 0;
+            text-align: center;
+            color:black;
+            list-style-type: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 5px;
+            float: left;
+            font-size: 1.2rem;
+            font-family: sans-serif;
+
+        }
+        .nav-bar li:hover{
+            background: rgba(170, 167, 167, 0.808);
+        }
+        .active{
+            background: rgb(43, 43, 240);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <li class="active">facebook</li>
+        <li>twitter</li>
+        <li>instagram</li>
+        <li>youtube</li>
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {}
+
+        .container {
+            width: 100%;
+            height: 755px;
+            background-image: url('/con2-img.jpg');
+            background-size: 100% 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .nav-bar {
+            width: 100%;
+            height: 65px;
+            padding: 12px;
+            display: inline-block;
+            position: fixed;
+            top: 0;
+            
+        
+            
+
+
+        }
+    
+        
+
+
+
+
+
+
+
+
+
+
+         .nav-left {
+            float: left;
+            font-size: 2rem;
+            color: white;
+            display: none;
+
+        }
+
+         .nav-right {
+            float: right;
+
+            font-size: 1.3rem;
+            font-family: sans-serif;
+            display: none;
+        
+
+
+        }
+
+      
+      
+        
+
+        
+
+        .nav-tog{
+            display: none;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .nav-add{
+            
+            background:black;
+            animation: slidein 0.5s linear;
+        
+        }
+        @keyframes slidein{
+            0%{
+         top:-65px;
+            }
+            100%{
+            top: 0;
+            }
+        }
+        .nav-add .nav-right{
+            display: block;
+        }
+        .nav-add .nav-right li {
+                list-style: none;
+                display: inline-block;
+                margin: 0px 10px;
+                cursor: pointer;
+                width: 100px;
+                height: 40px;
+                padding: 8px;
+                text-align: center;
+    
+            }
+        
+        .nav-add .nav-right li a{
+            color: white;
+            text-decoration: none;
+        }
+
+
+        
+        .nav-add .nav-left{
+            display: block;
+            color:white;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .con-heading{
+            font-size: 3rem;
+            color: gold;
+            font-family: sans-serif;
+            text-align: center;
+            
+        }
+        .con-text{
+            font-size: 1.3rem;
+            color:rgba(58, 57, 57, 0.87);
+            font-family: sans-serif;
+            text-align: center;
+
+        }
+        .con-btn{
+            text-align: center;
+            width: 220px;
+            height: 40px;
+            padding: 8px;
+            border: 1px solid gray;
+            font-size: 1.2rem;
+            color:rgb(241, 175, 7);
+            font-family: sans-serif;
+            background-color:rgb(133, 128, 128);
+            border-radius: 3px;
+
+        }
+        .con-btn:hover{
+            background: lightsalmon;
+            color: black;
+            cursor: pointer;;
+        }
+
+
+
+
+
+
+
+
+
+        .con{
+            width: 100%;
+            height: 680px;
+            background: white;
+            text-align: center;
+        
+        }
+        .con-heading{
+            font-size: 3.4rem;
+            font-weight: bold;
+            padding: 12px;
+            color: blueviolet;
+            padding-top: 4%;
+        }
+        .about{
+            background: lightpink;
+        }
+        .tour{
+            background: lightblue;
+        }
+
+
+
+
+
+
+
+
+        .footer{
+            width: 100%;
+            height: 200px;
+            background: #242323e1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .footer .f-text{
+            font-size: 1.5rem;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+
+        }
+
+
+
+
+
+
+
+
+
+        @media  screen and (min-width:400px) and (max-width:860px) {
+        .nav-right{
+            display: none;
+            
+
+        }
+        .nav-r{
+            display: block;
+    
+        }
+        .nav-tog{
+            display: block;
+            float:right;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        
+      
+            div.tog-add {
+                width: 100%;
+                position: fixed;
+                background: rgba(12, 12, 12, 0.911);
+                height: 240px;
+                animation: slide 0.8s;
+                animation-delay: 0s;
+            
+    
+            }
+            div.nav-r{
+                float: left;
+                width: 100%;
+                height: 180px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+        
+            }
+    
+            @keyframes slide {
+                0% {
+                    top: -240px;
+                    opacity: 0;
+                }
+    
+                100% {
+                    top: 0%;
+                    opacity: 1;
+                }
+            }
+            }
+
+
+
+
+            .top-link{
+                width: 32px;
+                height: 32px;
+                font-size: 1.6rem;
+                font-weight:bold;
+                background-color: aqua;
+                color: white;
+                text-align: center;
+                position: fixed;
+                right: 3rem;
+                bottom: 3rem;
+                border-radius: 4px;
+                animation: bounce 2s ease-in-out infinite;
+                visibility: hidden;
+                z-index: -100;
+
+            }
+            .top-link-add{
+                visibility: visible;
+                z-index: 100;
+            }
+            @keyframes bounce {
+                0%{
+                    transform: scale(1);
+        
+                }
+                50%{
+                    transform: scale(1.5);
+                }
+                100%{
+                    transform: scale(1);
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="home">
+        <div class="nav-bar" >
+            <div class="nav-left">Logo</div>
+            <div class="nav-tog">
+                <a class="open" href="#" onclick="tog()" >☰</a>
+            </div>
+            <div class="nav-right">
+                
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#tour">Tour</a></li>
+                
+            </div>
+        </div>
+
+
+        <div class="con-heading">Join Our Camp</div>
+        <div class="con-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates nisi rerum
+            repellat. Ipsa, eveniet saepe, repellendus maiores laborum tenetur incidunt est voluptate ratione
+            consequatur dolorem totam itaque dicta explicabo. Dolorem, quo labore in ut id odit. Velit, quae iusto.
+        </div>
+        <div class="con-btn">Explore the Community</div>
+    </div>
+
+
+    <div class="con-2 services con" id="services">
+        <div class="con-heading">Services</div>
+    </div>
+    <!-- top link -->
+    <div class="top-link">
+       <a href="#home" style="text-decoration: none;color:white;"> &#8593;</a>
+    </div>
+
+    <div class="con-3 about con" id="about">
+        <div class="con-heading">About</div>
+    </div>
+
+    <div class="con-4 tour con" id="tour">
+        <div class="con-heading">Features Tours</div>
+    </div>
+
+
+    <div class="footer">
+        <div class="f-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ea odio corporis laudantium magnam consectetur ullam repellendus ratione.</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function tog(){
+            navBar=document.querySelector('.nav-bar')
+            navR=document.querySelector('.nav-right')
+
+            navBar.classList.toggle('tog-add');
+
+
+            navR.classList.toggle('nav-r');
+           
+           
+        }
+        document.addEventListener('scroll',function(){
+            navBar=document.querySelector('.nav-bar')
+            navBar.classList.add('nav-add')
+
+            if(window.pageYOffset==0){
+             navBar.classList.remove('nav-add')
+            }
+            
+            scrollheight=pageYOffset;
+            if(scrollheight>300){
+                document.querySelector('.top-link').classList.add('top-link-add')
+            }
+            if(scrollheight<300){
+                document.querySelector('.top-link').classList.remove('top-link-add')
+
+            }
+          
+            
+            
+        })
+   
+    </script>
+</body>
+
+</html>
